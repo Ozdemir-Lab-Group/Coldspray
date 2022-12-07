@@ -7,14 +7,32 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "next": "latest",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "@chakra-ui/icons": "^2.0.9",
+    "@chakra-ui/layout": "^2.1.6",
+    "@chakra-ui/react": "^2.4.3",
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@react-three/drei": "^9.23.5",
+    "@react-three/fiber": "^8.3.1",
+    "@tim-soft/react-dat-gui": "4.0.11",
+    "@types/three": "^0.143.1",
+    "camera-controls": "^1.37.2",
+    "firebase": "^9.14.0",
+    "formik": "^2.2.9",
+    "framer-motion": "^6.5.1",
+    "fs": "^0.0.1-security",
+    "next": "^12.2.5",
+    "react": "^18.2.0",
+    "react-dat-gui": "2.2.0",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.2",
+    "react-spring": "9.0.0-rc.3",
+    "react-use-measure": "^2.1.1"
   },
   "devDependencies": {
     "@types/node": "^12.12.21",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
-    "typescript": "4.0"
+    "typescript": "4.3.2"
   }
 }

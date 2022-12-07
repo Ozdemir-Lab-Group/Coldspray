@@ -1,15 +1,13 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import { Box } from "@chakra-ui/layout";
+import { useAuth } from "../context/AuthContext";
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
-  </Layout>
-)
+function HomePage() {
+  const { user } = useAuth();
+  if (user) {
+    <Box> Welcome {user.displayName}</Box>;
+  } else {
+    <Box> This is the home page</Box>;
+  }
+}
 
-export default IndexPage
+export default HomePage;
