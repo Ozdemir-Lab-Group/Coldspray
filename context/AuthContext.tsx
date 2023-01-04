@@ -27,13 +27,12 @@ export function AuthContextProvider({ children }) {
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
+      console.log("new User", user);
       setCurrentUser(user);
       setIsLoading(false);
     });
 
-    return () => {
-      unsubscribe();
-    };
+    return unsubscribe;
   }, []);
 
   const signUp = async ({ email, password }: SimpleUser) => {
@@ -62,6 +61,7 @@ export function AuthContextProvider({ children }) {
     try {
       const response = await signInWithEmailAndPassword(auth, email, password);
       const user = response.user;
+      router.push("/");
       return { user };
     } catch (error) {
       return { error };
@@ -78,8 +78,13 @@ export function AuthContextProvider({ children }) {
     }
   };
 
-  const logout = () => {
-    signOut(auth);
+  const logout = async () => {
+    try {
+      await signOut(auth);
+      console.log("sucess");
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   const values = {

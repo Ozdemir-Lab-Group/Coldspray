@@ -1,6 +1,6 @@
 import { useState } from "react";
-import ThreeReactPoint from "../../components/ThreeReactPoint";
-import ColdSprayForm from "../../components/Forms";
+import ThreeReactPoint from "../../../components/ThreeReactPoint";
+import ColdSprayForm from "../../../components/SimulationForms/PointCloudForm";
 import { AttachmentIcon } from "@chakra-ui/icons";
 import { Box, HStack, VStack } from "@chakra-ui/layout";
 import { Button } from "@chakra-ui/react";
@@ -9,7 +9,7 @@ import { Center } from "@chakra-ui/layout";
 import { useDropzone } from "react-dropzone";
 import { Divider } from "@chakra-ui/layout";
 
-function App() {
+function PointCloud() {
   const [URL, setURL] = useState("");
 
   const handleChangeFile = (file) => {
@@ -72,4 +72,4 @@ function App() {
   );
 }
 
-export default App;
+export default PointCloud;

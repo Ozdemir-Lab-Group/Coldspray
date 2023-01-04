@@ -2,9 +2,7 @@ import { Grid, GridItem } from "@chakra-ui/layout";
 import { Center, Heading } from "@chakra-ui/react";
 import FixForm from "./FixForm";
 import { useFormikContext, Formik, Form, Field } from "formik";
-import { useState } from "react";
-import { FunctionInterpolation } from "@emotion/react";
-import { ColdSprayFormProps } from "../../Types";
+import { ColdSprayFormProps } from "../../../Types";
 
 interface GeneralFormProps {}
 

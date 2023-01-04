@@ -17,7 +17,7 @@ const AlertAuthentication: React.FC<AlertProps> = ({ status, description, onClos
         <AlertTitle fontSize="lg">{status}</AlertTitle>
       </Center>
       <AlertDescription maxWidth="sm" alignContent="center">
-        {description.length < 10 ? description.toString() : status}
+        {description.length < 100 ? description.toString() : status}
       </AlertDescription>
       <CloseButton
         alignSelf="flex-start"

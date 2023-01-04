@@ -9,7 +9,7 @@ import { AlertProps } from "../../Types";
 
 interface RegisterProps {}
 
-const register: React.FC<RegisterProps> = ({}) => {
+const login: React.FC<RegisterProps> = ({}) => {
   const { logInWithEmailAndPassword } = useAuth();
   const { onClose, onOpen, isOpen } = useDisclosure();
   const [alert, setAlert] = useState<AlertProps>(null);
@@ -58,4 +58,4 @@ const register: React.FC<RegisterProps> = ({}) => {
   );
 };
 
-export default register;
+export default login;

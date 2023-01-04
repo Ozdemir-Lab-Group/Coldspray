@@ -2,9 +2,9 @@ import { Container, Heading, Button, Text } from "@chakra-ui/react";
 import { Formik, Form } from "formik";
 import { Center, Grid, GridItem } from "@chakra-ui/layout";
 import { useFormik } from "formik";
-import GeneralForm from "../../components/Forms/GeneralForm";
-import SprayOriginForm from "../../components/Forms/SprayOriginForm";
-import NozzleForm from "../../components/Forms/NozzleForm";
+import GeneralForm from "./GeneralForm";
+import SprayOriginForm from "./SprayOriginForm";
+import NozzleForm from "./NozzleForm";
 
 interface FormProps {}
 
