@@ -11,20 +11,22 @@ import { getAuth } from "firebase/auth";
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 
+require("dotenv").config();
+
 const firebaseConfig = {
-  apiKey: "AIzaSyBFUETxjl8HWyulpMlxb6Dt98ewfo9bLOA",
+  apiKey: process.env.API_KEY,
 
-  authDomain: "coldspray-46453.firebaseapp.com",
+  authDomain: process.env.API_KEY,
 
-  projectId: "coldspray-46453",
+  projectId: process.env.PROJECT_ID,
 
-  storageBucket: "coldspray-46453.appspot.com",
+  storageBucket: process.env.STORAGE_BUCKET,
 
-  messagingSenderId: "200461085034",
+  messagingSenderId: process.env.MESSAGING_ID,
 
-  appId: "1:200461085034:web:7d01a0b37b5cfcbe9d9d13",
+  appId: process.env.APP_ID,
 
-  measurementId: "G-EGP2NQZDV7",
+  measurementId: process.env.MEASUREMENT_ID,
 };
 
 // Initialize Firebase
