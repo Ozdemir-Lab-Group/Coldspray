@@ -58,7 +58,7 @@ To run this project, you will need to add the following environment variables to
 
 ## Deployment
 
-To run this project, you first need to configure your navigate to the outer directory and click
+To run this project, you need to navigate to outer directory
 
 ```bash
   npm install
