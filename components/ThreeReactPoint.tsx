@@ -127,7 +127,7 @@ const ThreeReactPoint: React.FC<STLProps> = ({ URL }) => {
   };
 
   return (
-    <VStack>
+    <VStack height={"30vh"}>
       <Canvas camera={{ position: [0, -10, 80], fov: 50 }} dpr={[1, 2]}>
         <Lights />
         <OrbitControls makeDefault />

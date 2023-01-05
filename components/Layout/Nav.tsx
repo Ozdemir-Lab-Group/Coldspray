@@ -52,7 +52,9 @@ const Nav: React.FC<NavProps> = () => {
                 <Link href="/toolbox/dynamic">Gas Dynamics ToolBox</Link>
               </MenuItem>
               <MenuItem>Residual Stress ToolBox</MenuItem>
-              <MenuItem>CS Repair ToolBox</MenuItem>
+              <MenuItem>
+                <Link href="/toolbox/pointcloud">CS Repair ToolBox</Link>
+              </MenuItem>
               <MenuItem>CS AM ToolBox</MenuItem>
               <MenuItem>Material Select ToolBox</MenuItem>
               <MenuItem>CS Training ToolBox</MenuItem>

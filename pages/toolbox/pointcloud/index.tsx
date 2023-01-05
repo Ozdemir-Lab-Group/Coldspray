@@ -2,9 +2,9 @@ import { useState } from "react";
 import ThreeReactPoint from "../../../components/ThreeReactPoint";
 import ColdSprayForm from "../../../components/SimulationForms/PointCloudForm";
 import { AttachmentIcon } from "@chakra-ui/icons";
-import { Box, HStack, VStack } from "@chakra-ui/layout";
+import { Box, VStack } from "@chakra-ui/layout";
 import { Button } from "@chakra-ui/react";
-import { Text, Grid, GridItem } from "@chakra-ui/layout";
+import { Text } from "@chakra-ui/layout";
 import { Center } from "@chakra-ui/layout";
 import { useDropzone } from "react-dropzone";
 import { Divider } from "@chakra-ui/layout";
@@ -34,31 +34,34 @@ function PointCloud() {
   return (
     <Box>
       {!URL && (
-        <Center>
-          <Box {...getRootProps()} rounded="lg" boxShadow="lg" borderWidth={1} width={"30%"}>
-            <Center>
-              <VStack>
-                <Text fontWeight="bold" size="lg">
-                  Submit STL
-                </Text>
-                <Divider width={"75%"} />
-                <HStack>
-                  <Button
-                    onClick={() => {
-                      open();
-                    }}
-                    variant="outline"
-                    color="black"
-                    leftIcon={<AttachmentIcon />}
-                  >
-                    Upload
-                  </Button>
-                </HStack>
-                <input {...getInputProps} />
-              </VStack>
-            </Center>
-          </Box>
-        </Center>
+        <Box
+          {...getRootProps()}
+          rounded="lg"
+          boxShadow="xl"
+          borderWidth={1}
+          width={"100%"}
+          padding={2}
+          paddingX={5}
+        >
+          <Center>
+            <VStack>
+              <Text fontWeight="bold" size="lg">
+                Submit STL
+              </Text>
+              <Divider width={"75%"} />
+              <Button
+                onClick={() => {
+                  open();
+                }}
+                variant="outline"
+                color="black"
+                leftIcon={<AttachmentIcon />}
+              >
+                Upload
+              </Button>
+            </VStack>
+          </Center>
+        </Box>
       )}
       {URL && (
         <VStack>

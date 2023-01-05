@@ -1,47 +1,86 @@
-# TypeScript Next.js example
 
-This is a really simple project that shows the usage of Next.js with TypeScript.
+# KRI Website
 
-## Deploy your own
+This website allows mechanical engineers to model 3D stl files and apply different
+types of fixes like filling in a hole. These fixes are calculated by a process of backend
+functions created by Northeastern mechanical engineering Teaching Staff and Masters students.
+These STL files are modeled using React-Three-Fiber (A React wrapper for Three.JS) to allow for 
+interaction with 3D messhes.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-typescript)
+## Screenshots
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-typescript&project-name=with-typescript&repository-name=with-typescript)
+![App Screenshot](./asset/toolbox_screenshot.png)
 
-## How to use it?
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+## Run Locally
 
-```bash
-npx create-next-app --example with-typescript with-typescript-app
-```
-
-```bash
-yarn create next-app --example with-typescript with-typescript-app
-```
+Clone the project
 
 ```bash
-pnpm create next-app --example with-typescript with-typescript-app
+  git clone https://github.com/JCur24/Coldspray
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Go to the project directory
 
-## Notes
-
-This example shows how to integrate the TypeScript type system into Next.js. Since TypeScript is supported out of the box with Next.js, all we have to do is to install TypeScript.
-
-```
-npm install --save-dev typescript
+```bash
+  cd my-project
 ```
 
-To enable TypeScript's features, we install the type declarations for React and Node.
+Install dependencies
 
+```bash
+  npm install
 ```
-npm install --save-dev @types/react @types/react-dom @types/node
+
+Start the server
+
+```bash
+  npm run dev
 ```
 
-When we run `next dev` the next time, Next.js will start looking for any `.ts` or `.tsx` files in our project and builds it. It even automatically creates a `tsconfig.json` file for our project with the recommended settings.
 
-Next.js has built-in TypeScript declarations, so we'll get autocompletion for Next.js' modules straight away.
+## Environment Variables
 
-A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit` mode to run type-checking separately. You can then include this, for example, in your `test` scripts.
+To run this project, you will need to add the following environment variables to your Next.Js.config file
+
+`API_KEY`
+
+`AUTH_DOMAIN`
+
+`PROJECT_ID`
+
+`STORAGE_BUCKET`
+
+`MESSAGING_ID`
+
+`APP_ID`
+
+`MEASUREMENT_ID`
+
+
+## Deployment
+
+To run this project, you first need to configure your navigate to the outer directory and click
+
+```bash
+  npm install
+  npm run dev
+```
+
+
+## Tech Stack
+
+**Client:** Next.JS, React-Three Fiber, Chakra-UI, 
+
+**Server (Not Shown -- Private):** Python, Django 
+
+
+## Used By
+
+This project is used by the following companies:
+
+- KRI Institute at Northeastern University
+
+
+
+
