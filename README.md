@@ -1,5 +1,7 @@
 # KRI Website
 
+(Project Still in Progress)
+
 This website allows mechanical engineers to model 3D stl files and apply different
 types of fixes like filling in a hole. These fixes are calculated by a process of backend
 functions created by Northeastern mechanical engineering Teaching Staff and Masters students.
