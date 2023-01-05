@@ -8,7 +8,7 @@ interaction with 3D messhes.
 
 ## Screenshots
 
-<img src="drawing.jpg" alt="drawing" width="200" height="200"/>
+<img src="asset/toolbox_screenshot.png" width="200" height="200"/>
 
 ## Run Locally
 
