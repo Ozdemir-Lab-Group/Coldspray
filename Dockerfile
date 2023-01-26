@@ -18,7 +18,7 @@ COPY components ./components
 
 # Copy the extra folders
 COPY styles ./styles
-COPY Types ./Types
+COPY types ./types
 COPY asset ./asset
 COPY public ./public
 
