@@ -9,7 +9,7 @@ import {
   Button,
   Link,
 } from "@chakra-ui/react";
-import NavItem from "../NavItem";
+import NavItem from "./NavItem";
 import { useState } from "react";
 import { ChevronDownIcon, CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { useAuth } from "../../context/AuthContext";
@@ -45,7 +45,7 @@ const Nav: React.FC<NavProps> = () => {
           <NavItem href="/">Home</NavItem>
           <Menu>
             <MenuButton mb={{ base: 8, sm: 0 }} mr={{ base: 0, sm: 8 }} display="block">
-              ToolBox
+              ToolBox <ChevronDownIcon />
             </MenuButton>
             <MenuList>
               <MenuItem>
@@ -56,8 +56,15 @@ const Nav: React.FC<NavProps> = () => {
                 <Link href="/toolbox/pointcloud">CS Repair ToolBox</Link>
               </MenuItem>
               <MenuItem>CS AM ToolBox</MenuItem>
-              <MenuItem>Material Select ToolBox</MenuItem>
-              <MenuItem>CS Training ToolBox</MenuItem>
+              <MenuItem>
+                <Link href="/toolbox/material">Material Select Toolbox</Link>
+              </MenuItem>
+              <MenuItem>
+                <Link href="/toolbox/training">CS Training ToolBox</Link>
+              </MenuItem>
+              <MenuItem>
+                <Link href="/toolbox/saved">View Saved Runs</Link>
+              </MenuItem>
             </MenuList>
           </Menu>
           {user ? (

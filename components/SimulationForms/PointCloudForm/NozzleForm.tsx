@@ -1,7 +1,7 @@
 import { Grid, GridItem } from "@chakra-ui/layout";
 import { Center, Heading } from "@chakra-ui/react";
 import { useFormikContext } from "formik";
-import { ColdSprayFormProps } from "../../Types";
+import { ColdSprayFormProps } from "../../../types";
 import FixForm from "./FixForm";
 
 interface NozzleFormProps {}

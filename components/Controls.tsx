@@ -11,7 +11,7 @@ import {
   Grid,
   GridItem,
 } from "@chakra-ui/react";
-import { ControlProps, ScrollInputProps } from "../Types";
+import { ControlProps, ScrollInputProps } from "../types";
 
 export const ScrollInput: React.FC<ScrollInputProps> = (ScrollProps) => {
   const { group, handleFunction, label, state } = ScrollProps;

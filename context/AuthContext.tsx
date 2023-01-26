@@ -1,5 +1,5 @@
 import { useContext, useState, useEffect, createContext } from "react";
-import { ContextUser, SimpleUser } from "../Types";
+import { ContextUser, SimpleUser } from "../types";
 import {
   createUserWithEmailAndPassword,
   sendPasswordResetEmail,

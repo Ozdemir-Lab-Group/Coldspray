@@ -5,7 +5,7 @@ import InputField from "../../components/InputField";
 import { useAuth } from "../../context/AuthContext";
 import { Form, Formik } from "formik";
 import AlertAuthentication from "../../components/AlertAuthentication";
-import { AlertProps } from "../../Types";
+import { AlertProps } from "../../types";
 
 interface RegisterProps {}
 

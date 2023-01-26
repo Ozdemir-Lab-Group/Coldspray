@@ -7,7 +7,7 @@ import {
   CloseButton,
 } from "@chakra-ui/react";
 
-import { AlertProps } from "../Types";
+import { AlertProps } from "../types";
 
 const AlertAuthentication: React.FC<AlertProps> = ({ status, description, onClose }) => {
   return (

@@ -6,7 +6,9 @@ const Layout = ({ children }) => {
   return (
     <VStack>
       <Nav />
-      <Container centerContent>{children}</Container>
+      <Container centerContent width={"80%"}>
+        {children}
+      </Container>
     </VStack>
   );
 };

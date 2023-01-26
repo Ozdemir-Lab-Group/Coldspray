@@ -1,7 +1,7 @@
 import { FormControl, FormLabel, FormErrorMessage, FormHelperText, Input } from "@chakra-ui/react";
 import { useFormikContext } from "formik";
 import { useState } from "react";
-import { ColdSprayFormProps } from "../../../Types";
+import { ColdSprayFormProps } from "../../../types";
 
 interface FixFormProps {
   displayName?: string;

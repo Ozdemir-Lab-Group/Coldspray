@@ -5,7 +5,7 @@ import { OrbitControls, Bounds, Points, Point } from "@react-three/drei";
 import { TextureLoader } from "three/src/loaders/TextureLoader";
 import { VStack } from "@chakra-ui/layout";
 import { STLLoader } from "three/examples/jsm/loaders/STLLoader";
-import { STLProps, Coordinate } from "../Types";
+import { STLProps, Coordinate } from "../types";
 import circleImg from "../asset/circle.jpg";
 
 type PointProps = {
@@ -36,9 +36,9 @@ const SelectPoints: React.FC<PointProps> = ({ coordinates }) => {
         alphaTest={0.5}
         opacity={1.0}
       />
-      {coordinates.map((coordinate) => (
-        <Point position={[coordinate.x, coordinate.y, coordinate.z]}></Point>
-      ))}
+      {/* {coordinates.map((coordinate) => (
+        // <Point position={[coordinate.x, coordinate.y, coordinate.z]}></Point>
+      ))} */}
     </Points>
   );
 };

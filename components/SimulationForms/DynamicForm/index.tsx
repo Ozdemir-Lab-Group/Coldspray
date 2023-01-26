@@ -77,7 +77,7 @@ const DynamicForm: React.FC<{}> = () => {
         nozzle: "VRC-NZZL0009",
         inletLength: 0,
         standoffDistance: 0,
-        substrate: false,
+        substrate: "",
       },
       onSubmit: (values) => {
         console.log(values);
