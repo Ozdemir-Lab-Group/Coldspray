@@ -21,7 +21,7 @@ COPY styles ./styles
 COPY types ./types
 COPY asset ./asset
 COPY public ./public
-COPY ./nginx
+COPY nginx ./nginx
 
 
 
