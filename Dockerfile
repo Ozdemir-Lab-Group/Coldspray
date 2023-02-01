@@ -4,8 +4,8 @@ FROM node:16-alpine as build
 WORKDIR /app
 
 # copy the package.json to install dependencies
-COPY package.json package-lock.json ./
-COPY next.config.js ./next.config.js
+# COPY package.json package-lock.json ./
+# COPY next.config.js ./next.config.js
 
 # Install the dependencies and make the folder
 RUN npm install
@@ -24,6 +24,8 @@ RUN npm install
 # COPY nginx ./nginx
 
 COPY . /app/
+
+RUN npm install
 
 
 
