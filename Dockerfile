@@ -11,17 +11,19 @@ COPY next.config.js ./next.config.js
 RUN npm install
 
 # Copy all the folders:
-COPY Firebase.ts ./
-COPY pages ./pages
-COPY context ./context
-COPY components ./components
+# COPY Firebase.ts ./
+# COPY pages ./pages
+# COPY context ./context
+# COPY components ./components
 
-# Copy the extra folders
-COPY styles ./styles
-COPY types ./types
-COPY asset ./asset
-COPY public ./public
-COPY nginx ./nginx
+# # Copy the extra folders
+# COPY styles ./styles
+# COPY types ./types
+# COPY asset ./asset
+# COPY public ./public
+# COPY nginx ./nginx
+
+COPY . /app/
 
 
 
