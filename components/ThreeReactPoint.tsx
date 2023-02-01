@@ -1,5 +1,5 @@
 import { useState, Suspense, useEffect } from "react";
-import { Canvas, useLoader } from "react-three-fiber";
+import { Canvas, useLoader } from "@react-three/fiber";
 import { Button } from "@chakra-ui/react";
 import { OrbitControls, Bounds, Points, Point } from "@react-three/drei";
 import { TextureLoader } from "three/src/loaders/TextureLoader";
