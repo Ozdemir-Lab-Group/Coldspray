@@ -1,5 +1,5 @@
 # stage1 as builder
-FROM node:16-alpine 
+FROM node:16-alpine as build
 
 WORKDIR /app
 
@@ -31,7 +31,7 @@ RUN npm run build
 
 
 FROM nginx:1.23.3-alpine
-COPY --from=build /app/build /usr/share/nginx/html
+COPY --from= sudo build /app/build /usr/share/nginx/html
 RUN rm /etc/nginx/conf.d/default.conf
 COPY nginx/nginx.conf /etc/nginx/conf.d
 
