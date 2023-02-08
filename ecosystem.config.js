@@ -10,7 +10,7 @@ module.exports = {
       key: "key.pem",
       user: "ubuntu",
       host: "34.204.95.107",
-      ref: "origin/master",
+      ref: "origin/main",
       repo: "https://github.com/JCur24/Coldspray.git",
       path: "/home/ubuntu",
       "pre-deploy-local": "",
