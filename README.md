@@ -69,7 +69,7 @@ To run this project, you need to navigate to outer directory
 
 **Client:** Next.JS, React-Three Fiber, Chakra-UI,
 
-**Server (Not Shown -- Private):** Python, Django
+**Server (Not Shown) :** Python, FastAPI
 
 ## Used By
 
