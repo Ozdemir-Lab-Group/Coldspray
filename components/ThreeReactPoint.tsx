@@ -36,9 +36,9 @@ const SelectPoints: React.FC<PointProps> = ({ coordinates }) => {
         alphaTest={0.5}
         opacity={1.0}
       />
-      {/* {coordinates.map((coordinate) => (
-        // <Point position={[coordinate.x, coordinate.y, coordinate.z]}></Point>
-      ))} */}
+      {coordinates.map((coordinate) => (
+        <Point position={[coordinate.x, coordinate.y, coordinate.z]}></Point>
+      ))}
     </Points>
   );
 };
@@ -94,31 +94,33 @@ const Cloud: React.FC<ModelProps> = ({ data }) => {
 
 const ThreeReactPoint: React.FC<STLProps> = ({ URL }) => {
   const geom = useLoader(STLLoader, URL);
-  const [points, setPoints] = useState<Coordinate[]>([{ x: 1, y: 5, z: 10 }]);
+  const [points, setPoints] = useState<Coordinate[]>([]);
   const [pointCloudData, setPointCloudData] = useState("");
 
   const handlePoints = async () => {
-    const response = await fetch("http://localhost:8000/save", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        coordinates: points,
-      }),
-    });
+    // const response = await fetch("http://localhost:8080/repairToolbox/saveImage", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify({
+    //     coordinates: points,
+    //   }),
+    // });
 
-    try {
-      const geometry = await response.blob().then((data) => {
-        let fileData = new FileReader();
-        fileData.onloadend = (e) => {
-          setPointCloudData(fileData.result as string);
-        };
-        fileData.readAsDataURL(data);
-      });
-    } catch (error) {
-      console.log("Error with geometry");
-    }
+    // try {
+    //   const geometry = await response.blob().then((data) => {
+    //     let fileData = new FileReader();
+    //     fileData.onloadend = (e) => {
+    //       setPointCloudData(fileData.result as string);
+    //     };
+    //     fileData.readAsDataURL(data);
+    //   });
+    // } catch (error) {
+    //   console.log("Error with geometry");
+    // }
+
+    handleReset();
   };
 
   const handleReset = () => {
