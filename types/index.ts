@@ -39,6 +39,8 @@ export type ColdSprayFormProps = {
   N: string;
 };
 
+export type DataCardProps = {};
+
 export type ScrollInputProps = {
   group: string;
   handleFunction: (value: number) => void;
